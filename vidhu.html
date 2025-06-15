@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@tailwindcss/browser@latest"></script>
+    <img src="https://tse2.mm.bing.net/th?id=OIP.jJ2-p1x4YsY6ijKg7OJXsAHaDt&pid=Api&P=0&h=180">
+</head>
+<body class="bg-gray-100 font-inter">
+    <header class="bg-indigo-600 text-white fixed w-full top-0 z-50 shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#home" class="text-xl font-bold hover:text-indigo-300 transition duration-300">My Portfolio</a>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-6">
+                    <li><a href="#home" class="hover:text-indigo-300 transition duration-300">Home</a></li>
+                    <li><a href="#about" class="hover:text-indigo-300 transition duration-300">About</a></li>
+                    <li><a href="#portfolio" class="hover:text-indigo-300 transition duration-300">Portfolio</a></li>
+                    <li><a href="#skills" class="hover:text-indigo-300 transition duration-300">Skills</a></li>
+                    <li><a href="#experience" class="hover:text-indigo-300 transition duration-300">Experience</a></li>
+                    <li><a href="#contact" class="hover:text-indigo-300 transition duration-300">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="hamburger-btn" class="md:hidden text-white focus:outline-none" aria-label="Toggle Navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <div id="mobile-menu" class="hidden fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-90 z-50">
+        <div class="bg-gray-800 w-80 h-full absolute right-0 p-6">
+            <div class="flex justify-end mb-4">
+                <button id="close-menu-btn" class="text-white focus:outline-none" aria-label="Close Menu">
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <nav class="block">
+                <ul class="space-y-4">
+                    <li><a href="#home" class="block text-lg text-white hover:text-indigo-300 transition duration-300">Home</a></li>
+                    <li><a href="#about" class="block text-lg text-white hover:text-indigo-300 transition duration-300">About</a></li>
+                    <li><a href="#portfolio" class="block text-lg text-white hover:text-indigo-300 transition duration-300">Portfolio</a></li>
+                    <li><a href="#skills" class="block text-lg text-white hover:text-indigo-300 transition duration-300">Skills</a></li>
+                    <li><a href="#experience" class="block text-lg text-white hover:text-indigo-300 transition duration-300">Experience</a></li>
+                    <li><a href="#contact" class="block text-lg text-white hover:text-indigo-300 transition duration-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <main class="pt-20 pb-10 container mx-auto px-4">
+        <section id="home" class="text-center py-20">
+            <h1 class="text-4xl font-bold text-indigo-700 mb-4">Hello, I'm vidhya</h1>
+            <p class="text-lg text-gray-700 mb-8">A passionate web developer</p>
+            <a href="#portfolio" class="bg-indigo-600 text-white px-8 py-3 rounded-full hover:bg-indigo-700 transition duration-300 font-semibold">View my work</a>
+        </section>
+
+        <section id="about" class="text-center py-20">
+            <h2 class="text-3xl font-semibold text-indigo-700 mb-8">About Me</h2>
+            <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+               Hello and I get a real kick out of building things online. Whether it's making a website look great or adding cool features, I enjoy the whole process. <br>I'm comfortable working with HTML, CSS, and JavaScript, and I'm always looking for ways to improve. You can see some of my recent creations just below
+            </p>
+        </section>
+
+        <section id="portfolio" class="py-20">
+            <h2 class="text-3xl font-semibold text-indigo-700 text-center mb-12">Portfolio</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="project-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://placehold.co/600x400/EEE/31343C" alt="Project 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-indigo-600 mb-2">Project 1: E-commerce Website</h3>
+                        <p class="text-gray-700 mb-4">Developed a full-stack e-commerce website with user authentication, product catalog, shopping cart, and checkout functionality.</p>
+                        <a href="#" class="text-indigo-500 hover:text-indigo-700 transition duration-300 font-semibold">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://placehold.co/600x400/EEE/31343C" alt="Project 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-indigo-600 mb-2">Project 2: Data Visualization Dashboard</h3>
+                        <p class="text-gray-700 mb-4">Created an interactive dashboard to visualize sales data using D3.js, allowing users to filter and analyze trends.</p>
+                        <a href="#" class="text-indigo-500 hover:text-indigo-700 transition duration-300 font-semibold">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://placehold.co/600x400/EEE/31343C" alt="Project 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-indigo-600 mb-2">Project 3: Mobile Task Manager App</h3>
+                        <p class="text-gray-700 mb-4">Designed and developed a mobile app for managing tasks and to-do lists using React Native.</p>
+                        <a href="#" class="text-indigo-500 hover:text-indigo-700 transition duration-300 font-semibold">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="py-20 bg-gray-50">
+            <h2 class="text-3xl font-semibold text-indigo-700 text-center mb-11">Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <div class="mb-4">
+                        <div class="flex justify-between mb-1">
+                            <span class="text-gray-700 font-semibold">HTML</span>
+                            <span class="text-gray-700">85%</span>
+                        </div>
+                        <div class="bg-gray-200 rounded-full h-2.5">
+                            <div class="skill-bar bg-indigo-500 h-2.5 rounded-full" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="flex justify-between mb-1">
+                            <span class="text-gray-700 font-semibold">CSS</span>
+                            <span class="text-gray-700">75%</span>
+                        </div>
+                        <div class="bg-gray-200 rounded-full h-2.5">
+                            <div class="skill-bar bg-indigo-500 h-2.5 rounded-full" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="flex justify-between mb-1">
+                            <span class="text-gray-700 font-semibold">JavaScript</span>
+                            <span class="text-gray-700">60%</span>
+                        <div class="bg-gray-200 rounded-full h-2.5">
+                            <div class="skill-bar bg-indigo-500 h-2.5 rounded-full" style="width: 60%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                        </div>
+                        <div class="bg-gray-200 rounded-full h-2.5">
+                            <div class="skill-bar bg-indigo-500 h-2.5 rounded-full" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="py-20">
+            <h2 class="text-3xl font-semibold text-indigo-700 text-center mb-12">Experience</h2>
+            <div class="space-y-8">
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-semibold text-indigo-600 mb-2">Web Developer</h3>
+                    <p class="text-gray-700 mb-1">Acme Corporation, New York, NY</p>
+                    <p class="text-gray-500 mb-2">2023 - Present</p>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li>Designed and developed responsive websites using HTML, CSS, and JavaScript.</li>
+                        <li>Implemented front-end frameworks like React to build interactive user interfaces.</li>
+                        <li>Collaborated with back-end developers to integrate APIs and databases.</li>
+                        <li>Optimized website performance and ensured cross-browser compatibility.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-20 bg-gray-50">
+            <h2 class="text-3xl font-semibold text-indigo-700 text-center mb-12">Contact</h2>
+            <div class="text-center">
+                <p class="text-lg text-gray-700 mb-4">Email: cvidhya454gmail.com</p>
+                <p class="text-lg text-gray-700 mb-4">Phone: +7598489802</p>
+                <a href="https://www.linkedin.com/in/cvidhya" target="_blank" rel="noopener noreferrer" class="bg-indigo-600 text-white px-6 py-2 rounded-full hover:bg-indigo-700 transition duration-300 font-semibold inline-block">Connect on LinkedIn</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-4 text-center">
+        <p> 2024 vidhya All rights reserved.</p>
+
+    <script>
+        // Mobile menu toggle functionality
+        const hamburgerBtn = document.getElementById("hamburger-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+        const closeMenuBtn = document.getElementById("close-menu-btn");
+        const mobileMenuLinks = mobileMenu.querySelectorAll("a");
+        const navLinks = document.querySelectorAll('.nav-links a');
+        const sections = document.querySelectorAll('section');
+
+        function toggleMobileMenu() {
+            mobileMenu.classList.toggle("hidden");
+        }
+
+        hamburgerBtn.addEventListener("click", toggleMobileMenu);
+        closeMenuBtn.addEventListener("click", toggleMobileMenu);
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener("click", toggleMobileMenu);
+        });
+
+        document.addEventListener('click', (event) => {
+            if (!mobileMenu.classList.contains('hidden') && !mobileMenu.contains(event.target) && event.target !== hamburgerBtn) {
+                toggleMobileMenu();
+            }
+        });
+
+        // Smooth scrolling for all anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+       function updateActiveNavLink() {
+            let currentSectionId = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.scrollY >= sectionTop - 100 && window.scrollY < sectionTop + sectionHeight - 100) {
+                    currentSectionId = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').slice(1) === currentSectionId) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', updateActiveNavLink);
+
+
+    </script>
+</body>
+</html>
